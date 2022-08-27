@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <nav>Start</nav>
+            <span>//</span>
+            <nav>Blog</nav>
+        </header>
+        <h1>Blog</h1>
+        <div class="buttons-container">
+            <button
+                    class="btn active"
+                    id="Alle"
+                    onclick="addEventListener">
+                Alle Blog-Artikel
+            </button>
+            <button
+                    class="btn"
+                    id="Produkte"
+                    onclick="addEventListener">
+                Produkte
+            </button>
+            <button
+                    class="btn"
+                    id="Messen"
+                    onclick="addEventListener">
+                Messen
+            </button>
+        </div>
+        <div class="articles-container">
+            <article data-article="Produkte">
+                <h2>
+                    Der nächste Schritt ist getan: Wir sind klimaneutral
+                </h2>
+                <img src="https://picsum.photos/id/10/200/150" alt="Nature photo">
+                <p class="article-date">28.07.2022</p>
+                <p class="article-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vestibulum ullamcorper elit tincidunt placerat dictum.
+                    In venenatis augue ut felis pellentesque, eget venenatis magna elementum.
+                    Praesent bibendum purus dictum eros congue, quis porttitor turpis interdum.
+                    Duis a rhoncus velit. Proin suscipit ante purus, at maximus nibh tempus quis.
+                    Duis eget diam sit amet erat porta finibus. Nullam gravida ut justo non dignissim.
+                    Pellentesque non suscipit enim, et porta lectus. Etiam pharetra mollis auctor.
+                    Morbi vitae lacus vitae nibh pellentesque elementum lacinia id metus.
+                    Sed luctus sem pharetra tempor varius.
+                </p>
+            </article>
+            <article data-article="Messen">
+                <h2>
+                    Endlich wieder INTERSCHUTZ
+                </h2>
+                <img src="https://picsum.photos/id/12/200/150" alt="Nature photo">
+                <p class="article-date">07.07.2022</p>
+                <p class="article-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vestibulum ullamcorper elit tincidunt placerat dictum.
+                    In venenatis augue ut felis pellentesque, eget venenatis magna elementum.
+                    Praesent bibendum purus dictum eros congue, quis porttitor turpis interdum.
+                    Duis a rhoncus velit. Proin suscipit ante purus, at maximus nibh tempus quis.
+                </p>
+            </article>
+            <article data-article="Produkte">
+                <h2>
+                    Die LPS II im Freizeitgebrauch
+                </h2>
+                <img src="https://picsum.photos/id/11/200/150" alt="Nature photo">
+                <p class="article-date">29.06.2022</p>
+                <p class="article-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vestibulum ullamcorper elit tincidunt placerat dictum.
+                    In venenatis augue ut felis pellentesque, eget venenatis magna elementum.
+                </p>
+            </article>
+        </div>
+        <button class="load-more-button">
+            Mehr laden
+        </button>
+    </div>
+
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>

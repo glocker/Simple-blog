@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: normal;
+}
+
+.main-container {
+    padding: 10vh 10vw;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+}
+
+header span {
+    padding: 0 1vw;
+    color: #247fc7;
+}
+
+.main-container h1 {
+    color: royalblue;
+    padding: 2vh 0;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2vh;
+}
+
+.buttons-container button {
+    background: #E8E8E8;
+    font-size: 16px;
+    width: 250px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.btn.active {
+    background-color: #247fc7;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+article {
+    background-color: #E8E8E8;
+    padding: 5vh 5vw;
+    margin: 5vh 0;
+}
+
+article h4 {
+    color: royalblue;
+    font-size: 23px;
+}
+
+article .article-date {
+    padding: 2vh 0;
+}
+
+.load-more-button {
+    background: #247fc7;
+    color: white;
+    font-size: 16px;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    padding: 2vh 0;
+}
