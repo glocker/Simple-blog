@@ -22,7 +22,7 @@ header span {
     color: #247fc7;
 }
 
-.main-container h1 {
+.main-container h1, .main-container h2 {
     color: royalblue;
     padding: 2vh 0;
 }
