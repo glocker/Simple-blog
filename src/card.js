@@ -15,12 +15,12 @@ cardTitle.innerHTML = articleName;
 cardBreadcrumbs.innerHTML = articleName + " (" + articleDate + ")";
 
 // TODO: grab image from imagesList by imageMask only through photoId
-const imageMask = 'https://picsum.photos/id/10/200/150';
+const imageMask = 'https://picsum.photos/id/10/500/400';
 
 const imagesList = {
-    "Der nächste Schritt ist getan: Wir sind klimaneutral": "https://picsum.photos/id/10/200/150",
-    "Endlich wieder INTERSCHUTZ": "https://picsum.photos/id/12/200/150",
-    "Die LPS II im Freizeitgebrauch": "https://picsum.photos/id/11/200/150",
+    "Der nächste Schritt ist getan: Wir sind klimaneutral": "https://picsum.photos/id/10/500/400",
+    "Endlich wieder INTERSCHUTZ": "https://picsum.photos/id/12/500/400",
+    "Die LPS II im Freizeitgebrauch": "https://picsum.photos/id/11/500/400",
 }
 
 // Set clicked article image in new card
