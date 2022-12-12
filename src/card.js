@@ -1,3 +1,4 @@
+// URL data
 const url = document.location.href;
 const params = (new URL(url)).searchParams;
 const articleName = params.get("name");
@@ -6,7 +7,6 @@ const articleDate = params.get("date");
 // DOM elements
 const cardTitle = document.getElementById('cardTitle');
 const cardBreadcrumbs = document.getElementById('breadcrumbs');
-
 const cardImage = document.getElementById('image');
 
 // Set clicked article name to title of new card

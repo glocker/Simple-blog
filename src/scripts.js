@@ -1,43 +1,40 @@
-addEventListener('click', (event) => {
+function clickHandler(clickedButton) {
 
-    // Getting button id
-    const clickedButton = event.target.id;
-
-    // Get buttons list and remove .active classes
+    // Get buttons list
     const buttonsList = document.querySelectorAll('.btn');
-    buttonsList.forEach(button => {
-        button.classList.remove('active');
-    });
 
-    // Next set class for clicked button
-    const button = document.getElementById(clickedButton);
-    button.classList.add('active');
-
-    // Get articles list and hide others with display: none
+    // Get articles list
     const articlesList = document.querySelectorAll('article');
 
-    if (clickedButton === 'Alle') {
-        // Remove all display: none
-        articlesList.forEach(article => {
-            if (article.className === 'hidden') {
+    // Highlight clicked button and make inactive the rest buttons
+    buttonsList.forEach(button => {
+        if (clickedButton === button.id) {
+            button.classList.add("active");
+        }
+        if (clickedButton !== button.id) {
+            button.classList.remove("active");
+        }
+    });
+
+    // Show articles by clicked button
+    articlesList.forEach(article => {
+
+        if (clickedButton === "Alle") {
+
+            // Remove all display: none
+            article.classList.remove('hidden');
+        } else {
+
+            if (article.getAttribute('data-article') !== clickedButton) {
+
+                // Hide inactive articles with display: none
+                article.classList.add('hidden');
+
+            } else {
+
+                // Show previously hidden article
                 article.classList.remove('hidden');
             }
-        })
-    }
-
-    if (clickedButton === 'Produkte') {
-        articlesList.forEach(article => {
-            if (article.getAttribute('data-article') !== clickedButton) {
-                article.classList.add('hidden')
-            }
-        })
-    }
-
-    if (clickedButton === 'Messen') {
-        articlesList.forEach(article => {
-            if (article.getAttribute('data-article') !== clickedButton) {
-                article.classList.add('hidden')
-            }
-        })
-    }
-})
+        }
+    })
+}
